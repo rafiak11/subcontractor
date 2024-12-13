@@ -1,0 +1,131 @@
+/* General reset for the section */
+.questionSection {
+    /* padding: 3vh 11vw; Use responsive padding */
+    text-align: center;
+    padding: 5vh 0vw;
+  }
+  
+  /* Content container with flex properties for desktop layout */
+  .questionContent {
+    background-image: linear-gradient(
+      to bottom right,
+      #b8d7f2 0%,
+      #f5e7fe 36%,
+      #d2c6ee 75%,
+      #dde9d9 100%
+    );
+    padding: 5vh 4vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0vw; /* Space between the image and text */
+    /* flex-wrap: wrap; Allow content to wrap on smaller screens */
+  }
+  
+  /* Steps section on the left side */
+  .stepsWrapper {
+    flex: 0 0 50%;
+    text-align: left;
+  }
+  
+  /* Title for the steps */
+  .stepsTitle {
+    font-size: 2.5vw; /* Scales with viewport width */
+    font-weight: 800;
+    margin-bottom: 4vh;
+  }
+  
+  /* Unordered list for the steps */
+  .stepsList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Individual step items */
+  .stepItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2vh;
+  }
+  
+  .imageWrapper {
+    flex: 0 0 42%;
+  }
+  
+  /* Icon next to each step */
+  .stepIcon {
+    width: 2.5vw; /* Responsive width */
+    height: auto;
+    margin-right: 2vw;
+  }
+  
+  /* Text for each step */
+  .stepText {
+    font-size: 1.5vw; /* Responsive font size */
+  }
+  
+  /* Image section on the right side */
+  .questionImage {
+    /* flex: 0 0 42%; */
+    /* max-width: 40%; Image takes up a max of 40% of the container */
+    width: 100%;
+    border-radius: 13px;
+    object-fit: contain;
+    aspect-ratio: 1.24;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 991px) {
+    .questionSection {
+      padding: 5vh 4vw;
+    }
+  
+    .questionContent {
+      flex-direction: column; /* Stack elements vertically on smaller screens */
+      align-items: center;
+      padding: 4vh 2vw;
+    }
+  
+    .stepsWrapper {
+      margin-bottom: 3vh;
+      text-align: center;
+    }
+  
+    .stepsTitle {
+      font-size: 4.5vw; /* Slightly larger font size on smaller screens */
+    }
+  
+    .stepText {
+      font-size: 4vw; /* Increase font size for readability */
+    }
+  
+    .stepIcon {
+      width: 5vw; /* Increase icon size for better visibility */
+    }
+  
+    .questionImage {
+      max-width: 80%; /* Make the image take more space on smaller screens */
+      margin-bottom: 2vh;
+    }
+  }
+  
+  @media (max-width: 620px) {
+    .stepsTitle {
+      font-size: 6vw; /* Even larger font size for mobile */
+      margin-bottom: 3vh;
+    }
+  
+    .stepText {
+      font-size: 5vw; /* Increase text size on mobile */
+    }
+  
+    .stepIcon {
+      width: 8vw; /* Increase icon size on mobile */
+      margin-right: 3vw;
+    }
+  
+    .questionImage {
+      max-width: 90%; /* Utilize more screen space */
+    }
+  }

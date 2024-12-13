@@ -1,0 +1,108 @@
+/* General styles for the FAQ section */
+.faqSection {
+  margin-top:-10px;
+  padding: 0vh 5vw; /* Using viewport height and width for responsive padding */
+}
+
+/* FAQ Title */
+.faqTitle {
+  font-size: 3vw; /* Dynamic font size based on viewport width */
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 5vh; /* Using viewport height for spacing */
+}
+
+/* FAQ List */
+.faqList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  /* max-width: 80vw; Limit width to keep content centered */
+}
+
+/* FAQ Item */
+.faqItem {
+  margin-bottom: 4vh; /* Space between each item */
+}
+
+/* FAQ Question Button */
+.faqQuestion {
+  width: 100%;
+  text-align: left;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 1rem; /* Using rem for relative units */
+  padding: 0vh 3vw; /* Responsive padding */
+  font-size: 1.5rem; /* Dynamic font size */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Question Text */
+.question {
+  color: black;
+  font-family: "DM Sans", serif;
+}
+
+/* FAQ Icon */
+.faqIcon {
+  width: 4vw; /* Dynamic width based on viewport width */
+  height: 4vw; /* Dynamic height */
+  transition: transform 0.3s ease;
+}
+
+.faqIconOpen {
+  transform: rotate(180deg);
+}
+
+/* FAQ Answer */
+.faqAnswer {
+  padding: 2vh 3vw;
+  font-size: 1.8vw;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .faqTitle {
+    font-size: 5vw;
+  }
+
+  .faqQuestion {
+    padding: 3vh 4vw;
+    font-size: 4vw;
+  }
+
+  .faqIcon {
+    width: 6vw;
+    height: 6vw;
+  }
+
+  .faqAnswer {
+    font-size: 3.5vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .faqTitle {
+    font-size: 6vw;
+  }
+
+  .faqQuestion {
+    padding: 4vh 5vw;
+    font-size: 5vw;
+  }
+
+  .faqIcon {
+    width: 8vw;
+    height: 8vw;
+  }
+
+  .faqAnswer {
+    font-size: 4.5vw;
+  }
+}
+
+  

@@ -1,0 +1,89 @@
+footer {
+  background-color: rgba(0, 0, 0, 0.62);
+  color: #fff;
+  padding: 5vh 10vw 0vh; /* Adjust padding with vh/vw */
+  margin-top: 4vw;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+  gap: 1vw; /* Add spacing between sections using vw */
+}
+
+.footerSection {
+  margin-bottom: 3vw;
+  flex: 1 1 30%; /* Allows each section to take up 30% of space */
+}
+
+.footerSectionTitle {
+  font-size: 1.5vw; /* Responsive font size */
+  font-weight: 700;
+  margin-bottom: 2vh;
+}
+
+.footerLinkList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footerLink {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1vw; /* Responsive font size */
+  line-height: 2;
+}
+
+.footerContact {
+  max-width: 90%; /* Make the contact section responsive */
+}
+
+.footerAddress {
+  font-style: normal;
+  font-size: 1vw; /* Responsive font size */
+  line-height: 1.5;
+}
+
+.footerCopyright {
+  margin-top: 3vh;
+  text-align: center;
+  font-size: 1.5vw; /* Adjust font size for small screens */
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 991px) {
+  footer {
+    padding: 5vh 5vw 7vh; /* Adjust padding for smaller screens */
+  }
+
+  .footerContent {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footerSection,
+  .footerContact {
+    margin-bottom: 4vh; /* Adjust margin for smaller screens */
+    text-align: center;
+    width: 100%; /* Ensure sections take up full width */
+  }
+
+  .footerSectionTitle {
+    font-size: 5vw; /* Increase font size on small screens */
+  }
+
+  .footerLink {
+    font-size: 4vw; /* Adjust font size on smaller screens */
+  }
+
+  .footerAddress {
+    font-size: 4vw; /* Adjust font size for readability on small screens */
+  }
+
+  .footerCopyright {
+    font-size: 4vw; /* Adjust font size for copyright text */
+  }
+}
+
+  

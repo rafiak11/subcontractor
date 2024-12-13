@@ -1,0 +1,14 @@
+.bordersection{
+    padding: 2vw 0vw;
+}
+.border{ 
+    display: flex;
+    background-color: #DDEBF9;
+    color: black; 
+    align-items: center;
+    justify-content: center;
+}
+
+.heading{
+    font-size: 1.75em;
+}

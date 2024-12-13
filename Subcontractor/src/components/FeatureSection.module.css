@@ -1,0 +1,122 @@
+.featureSection {
+    padding: 0vh 5vw 0vh 5vw;
+  }
+  
+  .featureTitle {
+    font-size: 3vw; /* Adjusts with screen size */
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 5vh;
+  }
+  
+  /* Feature Item Styling */
+  .featureItem {
+    display: flex;
+    align-items: center;
+    border-radius: 13px;
+    margin-bottom: 7vh;
+    background-image: linear-gradient(
+      to bottom right,
+      #b8d7f2 0%,
+      #f5e7fe 36%,
+      #d2c6ee 75%,
+      #dde9d9 100%
+    );
+    padding: 3vh 2vw;
+  }
+  
+  .imagewrap {
+    flex: 0 0 45%;
+    max-width: 45%;
+  }
+  
+  .featureItem:nth-child(odd) {
+    flex-direction: row-reverse;
+    background-color: white;
+    background-image: none;
+  }
+  
+  .featureImage {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1.24;
+    object-fit: contain;
+  }
+  
+  .featureText {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 2vw;
+  }
+  
+  .featureItemTitle {
+    font-size: 2.5vw;
+    color: #4d358d;
+    margin-bottom: 2vh;
+  }
+  
+  .featureDescription {
+    font-size: 1.8vw;
+    color: #4d358d;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 991px) {
+    .featureSection {
+      padding: 6vh 4vw;
+    }
+  
+    .featureTitle {
+      font-size: 6vw;
+      margin-bottom: 4vh;
+    }
+  
+    .featureItem {
+      flex-direction: column;
+      padding: 4vh 3vw;
+    }
+  
+    .featureItem:nth-child(odd) {
+      flex-direction: column;
+    }
+  
+    .imagewrap {
+      max-width: 100%;
+      margin-bottom: 3vh;
+    }
+  
+    .featureText {
+      padding: 0;
+      text-align: center;
+    }
+  
+    .featureItemTitle {
+      font-size: 5vw;
+    }
+  
+    .featureDescription {
+      font-size: 4vw;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .featureTitle {
+      font-size: 7vw;
+    }
+  
+    .featureItemTitle {
+      font-size: 6vw;
+    }
+  
+    .featureDescription {
+      font-size: 4.5vw;
+    }
+  
+    .featureItem {
+      margin-bottom: 5vh;
+    }
+  
+    .imagewrap {
+      max-width: 90%;
+    }
+  }

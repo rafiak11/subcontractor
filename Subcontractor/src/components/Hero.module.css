@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .hero {
+    position: relative;
+    /* min-height: 70vh; Using viewport height for dynamic sizing */
+    padding: 15vh 2vw 6vh 10vw; /* Using viewport units for responsive padding */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .heroBackground {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .heroContent {
+    position: relative;
+    display: flex;
+    max-width: 90vw; /* Using viewport width for a responsive max-width */
+    width: 100%;
+    gap: 0%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .heroImageWrapper {
+    flex: 1 1 43%; /* Use flex-grow, flex-shrink, and flex-basis for responsiveness */
+  }
+  
+  .heroImage {
+    width: 90%;
+    border-radius: 14px;
+    object-fit: contain;
+  }
+  
+  .heroText {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+  }
+  
+  .heroTitle {
+    font-size: 3.6vw; /* Using viewport units for scalable fonts */
+    font-weight: 700;
+    margin-bottom: 4vh;
+  }
+  
+  .heroSubtitle {
+    font-size: 2vw;
+    margin-bottom: 2vh;
+  }
+  
+  .ctaWrapper {
+    display: flex;
+    gap: 1vw;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .ctaButton {
+    background-color: #7e56da;
+    color: #f5f5f5;
+    font-size: 1.5vw;
+    font-weight: 800;
+    padding: 1.5vh 2vw;
+    border: none;
+    border-radius: 1.5vw;
+    cursor: pointer;
+  }
+  
+  .signInLink {
+    font-size: 1.2vw;
+    margin-top: 1vh;
+  }
+  
+  .signInLink a {
+    color: inherit;
+    text-decoration: underline;
+  }
+  
+  /* Media Queries for Smaller Screens */
+  
+  /* Tablets (max-width: 991px) */
+  @media only screen and (max-width: 991px) {
+    .hero {
+      padding: 8vh 4vw;
+    }
+  
+    .heroContent {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 5vh;
+    }
+  
+    .heroTitle {
+      font-size: 6vw;
+    }
+  
+    .heroSubtitle {
+      font-size: 3vw;
+    }
+  
+    .ctaButton {
+      font-size: 2.5vw;
+      padding: 1.5vh 3vw;
+    }
+  
+    .signInLink {
+      font-size: 2vw;
+    }
+  }
+  
+  /* Mobile (max-width: 576px) */
+  @media only screen and (max-width: 576px) {
+    .hero {
+      padding: 6vh 3vw;
+      min-height: 50vh;
+    }
+  
+    .heroContent {
+      max-width: 100%;
+      gap: 3vh;
+    }
+  
+    .heroTitle {
+      font-size: 8vw;
+      margin-bottom: 3vh;
+    }
+  
+    .heroSubtitle {
+      font-size: 4vw;
+    }
+  
+    .ctaButton {
+      font-size: 3.5vw;
+      padding: 1.5vh 4vw;
+    }
+  
+    .signInLink {
+      font-size: 3vw;
+    }
+  
+    .heroImageWrapper {
+      margin-bottom: 4vh;
+    }
+  }
+  
